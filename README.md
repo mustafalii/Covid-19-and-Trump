@@ -48,4 +48,4 @@ Although the twitterscraper module allows us to scrape as many tweets as we want
 
 ## Usage
 
-The project may be best viewed in a notebook viewer that can be accessed [here](). In this notebook, you will find a walk through of the work done and the respective code.
+The project may be best viewed in a notebook viewer that can be accessed [here](https://nbviewer.jupyter.org/github/mali875/Covid-19-and-Trump/blob/master/NLP_Twitter.ipynb). In this notebook, you will find a walk through of the work done and the respective code.
