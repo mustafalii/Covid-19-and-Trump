@@ -36,11 +36,11 @@ Keeping in mind that all these tweets consist of the keywords "coronavirus" and 
 
 These tweets could further be analyzed, clustered, and mined for frequent patterns, and correlation analyses, however due to the limitations, I decided to keep it at a basic exploratory level.
 
-The following plot shows how the sentiment of the tweets from Jan through April:
+The following plot shows how the sentiment of the tweets varied from January through April:
 
 <img src="Visualizations/SentimentAnalysis.JPG" width=350>
 
-The first case of coronavirus in the US came sometime in late January. It appears, from the plot, that February was the month with the most negative as well as the most postive tweets. However, February was also the month with the most tweets in general.
+The first case of coronavirus in the US came sometime in late January. It appears, from the plot, that January and February were the months with the most negative tweets. However, February was also the month with the most positive tweets.
 
 ## Limitations
 
