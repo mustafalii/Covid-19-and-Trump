@@ -4,7 +4,7 @@
 * [Introduction](#introduction)
 * [Background](#background)
 * [Findings](#findings)
-* [Future Directions](#future-directions)
+* [Limitations](#limitations)
 * [Usage](#usage)
 
 ## Introduction
@@ -19,15 +19,32 @@ Using the [twitterscraper](https://github.com/taspinar/twitterscraper) module, I
 
 - Besides the keywords, what are other words that are most frequently found in these tweets?
 - How has the overall sentiment (regarding coronavirus & trump) changed over time?
-- 
 
 For sentiment analysis, I used the [Vader](https://github.com/cjhutto/vaderSentiment) Sentiment Analysis tools.
 
-
 ## Findings
 
-## Future Directions
+A major proportion of the tweets found were from the twitter account: https://twitter.com/bitcoinconnect?lang=en. In order to avoid biases in the results, I removed all tweets from this account. The pre-processing steps taken can be seen in the notebook. After cleaning the data and filtering out keywords/stop words from the tweets, the following wordclouds were generated for: tweets from January, February, March, and April, respectively:
 
+<img src="Visualizations/jan.JPG" width=350>          <img src="Visualizations/feb.JPG" width=350>
+<img src="Visualizations/march.JPG" width=350>        <img src="Visualizations/april.JPG" width=350>  
+
+Keeping in mind that all these tweets consist of the keywords "coronavirus" and "trump," here are some interesting observations:
+- "Under control" pops up in January's wordcloud.
+- "Blame" consistently appears as a common word, along with "Hoax" and "Democrat."
+- "Elizabeth Warren" and "Biden" appear as common words.
+
+These tweets could further be analyzed, clustered, and mined for frequent patterns, and correlation analyses, however due to the limitations, I decided to keep it at a basic exploratory level.
+
+The following plot shows how the sentiment of the tweets from Jan through April:
+
+<img src="Visualizations/SentimentAnalysis.JPG" width=350>
+
+The first case of coronavirus in the US came sometime in late January. It appears, from the plot, that February was the month with the most negative as well as the most postive tweets. However, February was also the month with the most tweets in general.
+
+## Limitations
+
+Although the twitterscraper module allows us to scrape as many tweets as we want, it is limited by the internet speed/bandwidth, therefore, the number of tweets scraped is different each time. In addition, the number of tweets scraped for each month also varies, which directly affects our results. Due to these issues, I have not made any inferences/conclusions from the results, especially since the purpose of this project was merely for learning.
 
 ## Usage
 
